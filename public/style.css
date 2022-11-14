@@ -1,0 +1,41 @@
+body{
+    font-family: 'Inconsolata', monospace;
+    color: rgb(0, 255, 0);
+    background-color: black;
+}
+
+#pur{
+    color: purple;
+}
+
+form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+form button{
+    margin-top: 17px;
+    background-color: transparent;
+    color: rgb(26, 255, 0);
+    border: rgb(0, 255, 0) 1px solid;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+form button:hover{
+    cursor: pointer;
+}
+
+form input{
+    background-color: transparent;
+    color: rgb(26, 255, 0);
+    border: rgb(0, 255, 0) 1px solid;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    outline: none;
+}

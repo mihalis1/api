@@ -1,0 +1,9 @@
+body{
+    font-family: 'Inconsolata', monospace;
+    color: rgb(0, 255, 0);
+    background-color: black;
+}
+
+#pur{
+    color: purple;
+}

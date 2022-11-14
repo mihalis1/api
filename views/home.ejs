@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleHome.css">
+    <title>Document</title>
+</head>
+<body>
+    <audio src="real"></audio>
+    <h1>Functions</h1>
+    <button id="btn1">flashing screen</button> <br>
+    <h3>MORE FEATURES COMMING SOON</h3>
+    <script>
+        
+        console.log('bruh')
+        let btn1 = document.getElementById('btn1')
+        let screenFlashing = false
+        btn1.addEventListener('click', () => {
+            if(screenFlashing == false){
+                screenFlashing = true
+            }else{
+                screenFlashing = false
+                document.body.style.backgroundColor = 'black'
+            }
+        })
+        let whiteFlash = false
+        setInterval(() => {
+            if(screenFlashing){
+                if(whiteFlash){
+                    document.body.style.backgroundColor = 'black'
+                    whiteFlash = false
+                }else{
+                    document.body.style.backgroundColor = 'white'
+                    whiteFlash = true
+                }
+            }
+            }, 10)
+    </script>
+</body>
+</html>
