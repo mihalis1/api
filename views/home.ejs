@@ -6,38 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styleHome.css">
-    <title>Document</title>
+    <title>utilities</title>
 </head>
 <body>
     <audio src="real"></audio>
     <h1>Functions</h1>
     <button id="btn1">flashing screen</button> <br>
-    <h3>MORE FEATURES COMMING SOON</h3>
-    <script>
+    <button id="btn2">cookie clicker</button> <br>
+    <button id="btn3">copy walter white's confession to clipboard | random test string</button>
+    <div id="cookie">
+        <div id="real">
+            <h3 id="displayCookie">Cookies: 0</h3>
+            <img id="clicker" src="cookie.png" alt="">
+        </div>
         
-        console.log('bruh')
-        let btn1 = document.getElementById('btn1')
-        let screenFlashing = false
-        btn1.addEventListener('click', () => {
-            if(screenFlashing == false){
-                screenFlashing = true
-            }else{
-                screenFlashing = false
-                document.body.style.backgroundColor = 'black'
-            }
-        })
-        let whiteFlash = false
-        setInterval(() => {
-            if(screenFlashing){
-                if(whiteFlash){
-                    document.body.style.backgroundColor = 'black'
-                    whiteFlash = false
-                }else{
-                    document.body.style.backgroundColor = 'white'
-                    whiteFlash = true
-                }
-            }
-            }, 10)
-    </script>
+    </div>
+    <h3 id="logout">log out</h3>
+    <script src="functions.js"></script>
 </body>
 </html>
