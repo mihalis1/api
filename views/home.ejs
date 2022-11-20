@@ -5,22 +5,136 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styleHome.css">
-    <title>utilities</title>
+    <title>plain text</title>
 </head>
 <body>
     <audio src="real"></audio>
-    <h1>Functions</h1>
-    <button id="btn1">flashing screen</button> <br>
-    <button id="btn2">cookie clicker</button> <br>
-    <button id="btn3">copy walter white's confession to clipboard | random test string</button>
+    <h1 class="mar">Main Hub</h1>
+    <div id="buttons">
+        <div id="btn1" class="item">
+            <img src="https://assets.stickpng.com/images/5a81af7d9123fa7bcc9b0793.png" id="icon" alt="">
+            <h3 class="title">Flasing Screen</h3>
+            <p>
+                *warning*
+            </p>
+        </div>
+        <div id="btn2" class="item">
+            <h3 class="title">Cookie Clicker</h3>
+            <img src="cookie.png" id="icon" alt="">
+            <p>
+                Make cookies by buying, upgreading and clicking!
+            </p>
+        </div><div id="btn3" class="item">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Walter_White_S5B.png/220px-Walter_White_S5B.png" id="icon" alt="" srcset="">
+            <h3 class="title">Copy Random String</h3>
+            <p>
+                my name is walter hardwell white, I live on 308 ABQ new mexico this is my confession
+            </p>
+        </div><div id="btn4" class="item">
+            <img src="https://static.wixstatic.com/media/2cd43b_2eb7ff53e41b4b9fb5ff6e47a07df307~mv2_d_1641_1283_s_2.png/v1/fill/w_320,h_249,q_90/2cd43b_2eb7ff53e41b4b9fb5ff6e47a07df307~mv2_d_1641_1283_s_2.png" id="icon" alt="" srcset="">
+            <h3 class="title">Simple Calculator</h3>
+            <p>
+                x = *, &divide; = /. do math and stuff idk
+            </p>
+        </div><div id="btn5" class="item">
+            <img src="https://static.vecteezy.com/system/resources/previews/001/200/758/original/music-note-png.png" id="icon" alt="" srcset="">
+            <h3 class="title">Music Board</h3>
+            <p>
+                Play built-in music (only 3 current songs)
+            </p>
+        </div><div id="btn6" class="item">
+            <h3 class="title">Text Encryption</h3>
+            <img src="https://cdn-icons-png.flaticon.com/512/3470/3470475.png" id="icon" alt="">
+            <p>
+                Encrypt stuff.
+            </p>
+        </div><div id="btn7" class="item">
+            <img src="https://pngimg.com/uploads/stopwatch/stopwatch_PNG101.png" id="icon" alt="">
+            <h3 class="title">Stopwatch</h3>
+            <p>
+                count those seconds | not added yet
+            </p>
+</div>
+    </div>
     <div id="cookie">
         <div id="real">
-            <h3 id="displayCookie">Cookies: 0</h3>
-            <img id="clicker" src="cookie.png" alt="">
+            <div id="clickerDiv">
+                <h3 id="displayCookie">Cookies: 0</h3>
+                <img id="clicker" src="cookie.png" alt="">
+            </div>
         </div>
-        
+        <div id="cookieMenu">
+            <button id="exitCookie">exit</button>
+            <h1 class="mar">cookie menu</h1>
+            <div id="selectUp">
+                <div class="selection">multipier:</div>
+                <div id="sp1" class="selection">2X (-100)</div>
+                <div id="sp2" class="selection">4X (-1000)</div>
+                <div id="sp3" class="selection">8X (-3500)</div>
+                <div id="sp4" class="selection">16X (-5000)</div>
+                <div id="sp5" class="selection">24X (-10000)</div>
+            </div>
+            <div id="selectUp">
+                <div class="selection">afk cookies:</div>
+                <div id="ep1" class="selection">1ck/s (-100)</div>
+                <div id="ep2" class="selection">5ck/s (-1,000)</div>
+                <div id="ep3" class="selection">10ck/s (-5,000)</div>
+                <div id="ep4" class="selection">25ck/s (-10,000)</div>
+            </div>
+        </div>
     </div>
+    <div id="encryptDiv">
+        <button id="exitEnc" class="mar" style="position: absolute; top: 0px; right: 0px;">exit</button>
+        <p class="mar">the is code used an from older project (codex string enecryption)</p>
+        <div class="mar">
+            <label for="key">Encryption Key: </label> <input type="text" name="" id="key">
+        </div>
+        <div class="mar">
+            <label for="key">String: </label> <input type="text" name="" id="string">
+        </div>
+        <button id="encMode" class="mar">Mode: Encrypt</button>
+        <button class="mar" id="startEnc">Start</button>
+        <h1 class="mar" id="EncOutput">Output:</h1>
+        <div class="mar">
+            <button id="genKeyBtn">Generate Key</button> <input type="text" name="" id="genKeyOuput">
+        </div>
+    </div>
+    <div id="calculator">
+        <input id="math" type="text" name="" id="calculate">
+        <button id="anwBTN">=</button>
+        <h4 id="displayAnsw">= </h4>
+    </div>
+    <div id="musicBoard">
+        <h2 style="margin: 10px;">MUSIC PLAYER</h2>
+        <button id="exitMusic" style="margin: 10px;">exit</button> <br>
+        <h4 class="mar">gus:</h4>
+        <audio style="width: 90%;" controls class="mar">
+            <source src="/music/gus.mp3" type="audio/mpeg"> <br>
+            Your browser does not support the audio tag.
+        </audio> <br>
+        <h4 class="mar">erika song</h4>
+        <audio style="width: 90%;" controls class="mar">
+            <source src="/music/ofv.mp3" type="audio/mpeg"> <br>
+            Your browser does not support the audio tag.
+        </audio>
+        <h4 class="mar">Midnight - sped up</h4>
+        <audio style="width: 90%;" controls class="mar">
+            <source src="/music/midnight.mp3" type="audio/mpeg"> <br>
+            Your browser does not support the audio tag.
+        </audio>
+        <h3 class="mar">CUSTOM AUDIO PLAYER DEMO:</h3>
+        <div id="musicPlayer">
+            <input type="range" id="volume" name="volume"min="0" max="131">
+            <input id="play0" type="button" value="Play">
+        </div>
+    </div>
+    <div id="stopwatch">
+        <h1 id="displayTime">0</h1>
+        <button id="startTime">Start/Stop</button>
+    </div>
+    <a style="position:fixed; bottom:0px; right: 0px; margin: 5px; text-align: center; width: 100%; color: white; opacity: 0.3; font-family: 'Poppins';" href="https://www.shark-core.com">Codex-X | SHARK-CORE&#x2122 SOFTWARE | Version: Pre Alpha 0.5.0 | Product DISTROBUTED By MC And AT</a>
     <h3 id="logout">log out</h3>
     <script src="functions.js"></script>
 </body>
