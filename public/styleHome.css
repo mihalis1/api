@@ -294,3 +294,15 @@ button:hover{
     flex-direction: column;
     border-radius: 10px;
 }
+
+#matrixCode{
+    visibility: hidden;
+    overflow-y: scroll;
+    color: rgb(0, 255, 0);
+    background-color: black;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+}

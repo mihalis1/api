@@ -24,6 +24,28 @@ let cookieAmount = 0
 let addCookie = 1
 let addCPS = 0
 
+//hackerTyper 
+const matrix = document.getElementById('matrixCode')
+let codeLines = [
+    `console.log('hello world'); <br> `,
+    'Function Bruh(x){ console.log(x) }; <br> ',
+    'Bruh("Hello World")}; <br> ', 
+    'const key = browser.cookie.toUpperCase(); <br>',
+    `// message from AT codex-x founder aka homelander: im currently gone xd. <br>`,
+    `internet.hack('real'); <br>`, 
+    `if(key == "the key isnt here."){ console.log("cookie earned") }; <br>`,
+    `// message from MC codex-x founder: go to https://www.shark-core.com}; <br>`,
+    `var basedLevelOfMC = MC.getBasedLevel() <br>`,
+    `Console.WriteLine("wait a momment this isn't javascript, it's C#"); <br>`,
+    `// MC and AT used to be roblox developers xd <br>`,
+    `*LOCAL SERVER STARTED AT 4000* <br>`,
+    `app.get(req, res, () => { res.send("express.js is cool") }); <br>`,
+    `byPassChromeBookFileSys("OVERWRITE_SYSTEM_TO_WINDOWS"); <br>`,
+    `GATHERING WINDOWS SECURITY FLAWS... <br>`,
+    `<br>`
+]
+const exitMatrix = document.getElementById('exitTyper')
+
 let mulArrays = {
     elements: [document.getElementById('sp1'), document.getElementById('sp2'), document.getElementById('sp3'), document.getElementById('sp4'), document.getElementById('sp5')],
     prices: [100, 1000, 3500, 5000, 10000],
@@ -308,4 +330,19 @@ genKeyBtn.addEventListener('click', () => {
 
 btn7.addEventListener('click', () => {
     
+})
+
+document.addEventListener('keydown', (x) => {
+    if(x.keyCode == 48){
+        matrix.style.visibility = 'hidden'
+    }
+    matrix.scrollTo(0, matrix.scrollHeight);
+    console.log('supposed to work')
+    matrix.innerHTML += codeLines[Math.floor(Math.random() * codeLines.length)]
+})
+
+
+
+btn7.addEventListener('click', () => {
+    matrix.style.visibility = 'visible'
 })
